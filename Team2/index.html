@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Team 2 &ndash; YSDN3005/S12</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- Typekit -->
+    <script type="text/javascript" src="http://use.typekit.com/bau3dne.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Mobile Dev Team 2</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <header class="huge subhead" id="overview">
+        <h1><span><span class="visible-phone">WA</span><span class="hidden-phone">Workman Arts</span></span> <span class="raspberry">+</span> YSDN</h1>
+        <p class="lead">We're designing and building a mobile prototype for <a href="http://wwww.workmanarts.com">Workman Arts</a>, a Toronto-based not-for-profit organization that promotes and supports artists and mental health.</p>
+        <p>
+          <a href="#" class="btn btn-large btn-danger"><i class="icon-heart"></i> Send us love</a>
+        </p>
+      </header>
+      <section role="main">
+        <div class="row">
+
+          <div class="span4">
+            <h2>The Process</h2>
+            <ul class="nav nav-tabs nav-stacked" id="tabs">
+              <li><a href="#home"><i class="icon-home" data-toggle="tab"></i> Home</a></li>
+              <li><a href="#logs"><i class="icon-book" data-toggle="tab"></i> Logs</a></li>
+              <li><a href="#week1"><i class="icon-calendar" data-toggle="tab"></i> Week 1</a></li>
+              <li><a href="#week2"><i class="icon-calendar" data-toggle="tab"></i> Week 2</a></li>
+            </ul>
+            <h2>The Group</h2>
+            <table class="table table-striped">
+              <tr>
+                <td>Kate Hudson</td>
+                <td>@k88hudson</td>
+              </tr>
+              <tr>
+                <td>Tabitha Kerbabian</td>
+                <td>@tabstract</td>
+              </tr>
+              <tr>
+                <td>Edith Wong</td>
+                <td>@ebhwong</td>
+              </tr>
+              <tr>
+                <td>Teresa Yung</td>
+                <td>@tyung</td>
+              </tr>
+            </table>
+
+            <h2>Resources</h2>
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="https://github.com/k88hudson/ysdn-3005-s12">This code on github</a></li>  
+              <li><a href="http://bit.ly/ds3005">Course website</a> </li>
+            </ul>            
+          </div>
+          <div class="tab-content">
+            <div class="span8" class="tab-pane" id="home">
+              <h2>The Client</h2>
+               <blockquote>
+                  <p>WA has evolved into a professionally-recognized multi-disciplinary arts organization with over 230 active Members, all with artistic abilities and goals. WA has worked with thousands of artists with mental health and addiction issues who have performed/displayed to hundreds of thousands of people.</p>
+                  <small>workmanarts.com</small>
+                </blockquote>
+                <iframe src="http://player.vimeo.com/video/39393580" width="370" height="440" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                <p class="caption">The Rendezvous with Madness film festival has been running for 20 years</p>
+            </div>
+            <div class="span8" class="tab-pane" id="logs" style="margin-top: 10px;">
+              <ul class="nav nav-tabs" id="log-tabs">
+                <li class="active"><a href="#kate">Kate</a></li>
+                <li><a href="#tabitha">Tabitha</a></li>
+                <li><a href="#teresa">Teresa</a></li>
+                <li><a href="#edith">Edith</a></li>
+              </ul>
+              <div id="log-content">
+                 <!-- ajax loads here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      <section>
+      <footer class="footer">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Built with Twitter Bootstrap, yo.</p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      </footer>
+  
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/js/bootstrap-button.js"></script>
+    <script src="bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+    <script>
+       $(function () {
+
+        $('#tabs a').click(function (e) {
+          e.preventDefault();
+          $(this).tab('show');
+        })
+
+        $('#log-tabs a').click(function (e) {
+          e.preventDefault();
+          $(this).tab('show');
+          var name = this.href.split("#")[1];
+          loadLog( name );
+        });
+
+       function loadLog( name ) {
+          if( name === "kate") {
+
+            $.ajax({
+              url: 'https://api.github.com/repos/k88hudson/ysdn-3005-s12/commits',
+              crossDomain: true,
+              data: { "client_id" : '014990cbe1ad396fc175' }
+            }).done( function( data ) {
+                window.Doob = data;
+                console.log( data );
+                var tableHTML = '<table class="table table-bordered table-striped">'+
+                '<thead>'+'<tr><th style="width: 150px;">Date</th><th>Message</th></tr>'+'</thead><tbody>';
+                for(var i = 0; i < data.length; i++) {
+                  tableHTML = tableHTML + "<tr>" +
+                  "<td>" +'<a href="' + data[ i ].url + '">' + data[ i ].commit.committer.date.split("T")[0] + "</a></td>" +
+                  "<td>" + data[ i ].commit.message + "</td>"+
+                  "</tr>";
+                }
+                console.log( tableHTML);
+                tableHTML += "</tbody></table>";
+                $("#log-content").html( tableHTML );
+            });
+          } else {
+            $('#log-content').load('logs/' + name + '.html', function( data ) {
+              $("#log-content").html( data );
+            });
+          }
+        
+        }
+
+
+        //Setup
+        $('#tabs a:first').tab('show');
+        loadLog( "kate" );
+
+      })
+    </script>
+
+  </body>
+</html>

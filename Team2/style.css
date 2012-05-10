@@ -1,0 +1,110 @@
+/* Some colours:  
+Raspberry: #CC2738;
+Palse blue: #789AA1;
+*/
+
+body {
+	background: url('img/brillant.png') repeat;
+  font-size: 1em;
+}
+
+/* Colours  ----------------------------- */
+
+.raspberry { color: #CC2738;}
+.raspberry-dark { color: #BF0426; }
+.raspberry-darkest { color: #690011; }
+.lagoon { color: #04BFBF; }
+
+/* Type --------------------------------- */
+
+body, p, blockquote { 
+  font-family: chaparral-pro, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-size: 18px;
+}
+.navbar, .btn, .nav, .footer p { 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-size: 13px;
+}
+a { color: #789AA1; }
+
+a:hover { color: #304345; }
+.huge h1 {
+  font-family: chaparral-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 9px;
+  font-size: 81px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+p.lead { font-size: 24px; line-height: 1.3;}
+
+h2 { 
+  font-size: 32px;
+  font-weight: 400;
+  margin: .8em 0 .4em 0;
+}
+blockquote p{
+  font-size: 1em;
+  line-height: 1.5;
+}
+blockquote small {
+  font-style: italic;
+}
+
+p.caption { 
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #A0D5D6;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.footer p {
+  font-size: 13px;
+  line-height: 1;
+}
+
+
+header { 
+  border-bottom: 1px dashed #CCC;
+}
+.tab-content > div {
+  display: none;
+}
+iframe { width: 100% }
+
+.footer {
+  margin-top: 45px;
+  padding: 35px 0 36px;
+  border-top: 1px solid #E5E5E5;
+}
+
+/* Responsive --------------------------------- */
+
+/* MOBILE */
+@media (max-width: 480px) {
+	.huge h1 {
+    font-size: 50px;
+    margin-right: 0;
+	}
+
+  header {
+    text-align: center;
+  }
+
+}
+
+/* TABLET TO DESKTOP */
+@media (min-width: 480px) and (max-width: 979px) { 
+  .huge h1 {
+    font-size: 65px;
+    margin-right: 0;
+  }
+
+}
+
+/* DESKTOP */
+@media( min-width: 979px ) {
+  body { padding-top: 100px; } /* For top-bar spacing */
+}
+
