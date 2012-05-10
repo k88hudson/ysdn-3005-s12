@@ -95,6 +95,7 @@
             </ul>            
           </div>
           <div class="tab-content">
+
             <div class="span8" class="tab-pane" id="home">
               <h2>The Client</h2>
                <blockquote>
@@ -104,6 +105,7 @@
                 <iframe src="http://player.vimeo.com/video/39393580" width="370" height="440" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                 <p class="caption">The Rendezvous with Madness film festival has been running for 20 years</p>
             </div>
+
             <div class="span8" class="tab-pane" id="logs" style="margin-top: 10px;">
               <ul class="nav nav-tabs" id="log-tabs">
                 <li class="active"><a href="#kate">Kate</a></li>
@@ -114,9 +116,14 @@
               <div id="log-content">
                  <!-- ajax loads here -->
               </div>
+            </div><!-- #logs -->
+
+            <div class="span8" class="tab-pane" id="week1">
+              <!-- ajax loads here -->
             </div>
-          </div>
-        </div>
+
+          </div><!-- #tab-content-->
+        </div><!-- .row-->
       <section>
       <footer class="footer">
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -160,7 +167,6 @@
 
        function loadLog( name ) {
           if( name === "kate") {
-
             $.ajax({
               url: 'https://api.github.com/repos/k88hudson/ysdn-3005-s12/commits',
               crossDomain: true,
@@ -168,7 +174,7 @@
             }).done( function( data ) {
                 window.Doob = data;
                 console.log( data );
-                var tableHTML = '<table class="table table-bordered table-striped">'+
+                var tableHTML = '<table class="table helvetica table-bordered table-striped">'+
                 '<thead>'+'<tr><th style="width: 150px;">Date</th><th>Message</th></tr>'+'</thead><tbody>';
                 for(var i = 0; i < data.length; i++) {
                   tableHTML = tableHTML + "<tr>" +
@@ -178,7 +184,7 @@
                 }
                 console.log( tableHTML);
                 tableHTML += "</tbody></table>";
-                $("#log-content").html( tableHTML );
+                $("#log-content").html( "<h2>Kate's Log</h2>" + tableHTML );
             });
           } else {
             $('#log-content').load('logs/' + name + '.html', function( data ) {
@@ -191,7 +197,12 @@
 
         //Setup
         $('#tabs a:first').tab('show');
+
         loadLog( "kate" );
+
+        $('#week1').load('content/week1.html', function( data ) {
+          $("#week1").html( data );
+        });
 
       })
     </script>
